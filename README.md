@@ -1,1 +1,1 @@
-Online Newspaper
+Online Newspaper Template
