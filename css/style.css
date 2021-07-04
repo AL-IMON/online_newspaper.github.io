@@ -1,0 +1,171 @@
+/*--------------------------------------------------------------
+#                               common css
+--------------------------------------------------------------*/
+
+@font-face {font-family: myfont;src: url('../fonts/SolaimanLipi.ttf');}
+body {background-color: #fff;font-family: myfont; margin: 0 auto;box-sizing: border-box;overflow-x: hidden; scroll-behavior: smooth;user-select: none;line-height: 1.4;}
+a:link,a:visited {text-decoration: none;cursor: pointer;color: unset;}
+.container{max-width: 1280px;}
+
+/*--------------------------------------------------------------
+#                               header
+--------------------------------------------------------------*/
+
+
+/*------sidenav----*/
+
+.sidenav {height: 660px;width: 0;position: fixed;z-index: 1;top: 0;left: 0;background-color: #fff;overflow-x: scroll;transition: 0.5s;padding-top: 60px;}
+.side_toogler{font-size:30px;cursor:pointer;margin-top: 15px;}
+.sidenav ul{list-style-type: none;}
+.sidenav ul li{margin: 10px 30px 10px 0px;border-bottom: 1px solid rgba(128, 128, 128, 0.466);}
+.sidenav a {text-decoration: none;font-size: 18px;color: #3f3e3e;display: block;transition: 0.3s;margin-bottom: 10px;}
+.sidenav a:hover {color: black;}
+.sidenav .closebtn {position: absolute;top: 0;right: 25px;font-size: 36px;margin-left: 50px;}
+.Section_social_network{display: inline-block; text-align: center;}
+.Section_social_network ul li a{margin: 0 2px;}
+.Section_social_network ul li a.fb-link{color: #fff;padding: 3px 8px;background: #3B5998 !important;background: #3B5998 !important;border-radius: 50%;}
+.Section_social_network ul li a.twitter-link{color:#55ACEE;font-size: 15px;
+line-height: 23px;}
+.Section_social_network ul li a.linkedin-link{background: #185ab1 !important;padding: 3px 5px;color: #fff;}
+.Section_social_network ul li a.youtube-link{color: red;font-size: 15px;line-height: 23px;}
+.Section_social_network ul li a.feed-link{background: #ea7819  !important;}
+.Section_social_network ul li a.instagram-link{background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);}
+
+
+
+.lead_logo{text-align: left;}
+.header_right{text-align: right;font-size: 13px;color: black;margin-top: 20px;}
+
+#lead_navbar{background: #07984c;opacity: 1;}
+#lead_navbar .nav_logo{background:#fff; }
+#lead_navbar .nav_logo img{height: 30px;width: auto;}
+
+
+.sticky {position: fixed;top: 0;width: 100%;z-index: 999;}
+.sticky + .content {padding-top: 50px;}
+#lead_navbar .navbar{padding: 0px;}
+#lead_navbar .nav-item a{padding:10px 15px; text-transform: uppercase; font-size:17px; color: white; }
+#lead_navbar .navbar-nav .nav-item .nav-link:hover{background: #ff0000; color: #fff;}
+#lead_navbar .dropdown-menu{margin: 0px; padding: 8px;line-height: 8px;background:grey;border-radius: 0px;}
+#lead_navbar .navbar-nav .nav-item  .dropdown_nav_item .dropdown-item:hover{background: #ffffff; color: rgb(0, 0, 0);}
+#lead_navbar .dropdown-menu a{text-align: left;font-size: 16px !important;}
+#lead_navbar .navbar-nav li:hover > .dropdown-menu {display: flex;}
+
+#lead_navbar #src_icon{cursor: pointer;margin-left:10px;margin-top: 10px;font-size: 22px;color: #fff;}
+
+#lead_navbar .input-group-addon{padding: 10px;font-size: 20px;}
+#lead_navbar .search_box{display: none;}
+
+/*--------------------------------------------------------------
+#                               top-figure
+--------------------------------------------------------------*/
+#top_figure .media{height: 100px;}
+.main-lead .lead_news_image{background: #dadadaa9;text-align: center;}
+.main-lead .lead-news p{font-size: 20px;font-weight: bold;}
+
+.media .media_image{background: #dadadaa9;text-align: center;}
+.media .media-body{margin-left: 10px;font-size: 15px;font-weight: bold;}
+.lead_ad{background: #dadadaa9;text-align: center;}
+
+
+/*--------------------------------------------------------------
+#                               jatiyo
+--------------------------------------------------------------*/
+.lead_category{background: url('../img/logo/Group\ 10.png');background-repeat: no-repeat;background-size: cover;margin: 10px 0px;}
+.lead_category p{font-size: 20px;color: white;padding: 3px 20px;}
+#jatiyo .sub-lead{height: 200px;}
+.sub-lead .sub_lead_image{background: #dadadaa9;text-align: center;}
+.sub-lead .sub_lead_news{font-size: 17px;font-weight: bold;}
+
+/*--------------------------------------------------------------
+#                               international
+--------------------------------------------------------------*/
+.cat_news{position: relative;}
+.cat_news img{width: 100%;}
+.news_title{position: absolute;bottom: 0px;padding: 1px 10px;font-size: 17px;background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,1.5) 100%);color: #fff; width: 100%;}
+.news_title p{margin: 5px;}
+
+/*--------------------------------------------------------------
+#                               mid-figure
+--------------------------------------------------------------*/
+#mid-figure .lead_category p{font-size: 20px;color: white;padding: 3px 10px;}
+#mid-figure .media{height: 50px;}
+
+/*--------------------------------------------------------------
+#                               right_section
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#                               tab bar
+--------------------------------------------------------------*/
+.tab_bar_block_new ul{display:table;width: 100%;margin:0;background: #d1d1d1;}
+.tab_bar_block_new ul > li{padding: 3px;position:relative; display: table-cell; font-size:16px;color:black;width:50%;text-align: center;cursor: pointer;}
+
+.tab_bar_block_new ul > li.active{padding: 2px 3px;color: #fff; background: #07984c; height: 30px;}
+.tab_bar_block_new ul{margin: 0 !important;}
+.editor_picks_list{display: table;width: 100%;padding: 3px 10px;}
+
+#latest_list_block1{position: relative;overflow: hidden; height: 100%;max-width: 100%;outline: none;direction: ltr;}
+.headline_list .news-list-item{display: flex;height: 45px;border-bottom: 1px dashed rgba(145, 144, 144, 0.795);}
+.news-list-item .headline-list{margin: -33px 25px 7px!important;line-height: 1.4;font-size: 14px!important;width: 215px;}
+.news-list-item .r_logo{width: 50px; margin: 6px 0px;}
+#test1{height:310px; overflow-x:hidden; overflow-y: auto;}
+.editor_picks_list > a > div{display: table-cell; vertical-align: middle;}
+.editor_picks_list > a > div.img{background: #f7f7f7;text-align: center;}
+#popular_list_block1{display: none;}
+
+.right_category{background: #ff0000;}
+.right_category p{text-align: center; color: #fff;}
+.sompakidiyo_category p{text-align: center; background: #07984c; color: white; font-size: 17px;}
+.sompakidiyo_news{text-align: left;border-bottom: 1px dashed;}
+
+.prayer_time img{width: 100%;height: 100px;padding-top: 20px;}
+.prayer_name p{width: 100%;background-color: #009C8D;color: white;font-size: 12px;margin: 3px;border: white;text-align: center;}
+.prayerTime p{width: 100%;background-color: #D60F0F;color: white;font-size: 12px;margin: 3px;border: white;text-align: center;}
+
+.from-box .from_heading p{font-size: 19px;text-align: center;background:#C82A2A;width: 100%;color: white;font-weight: bold;}
+.from-box .input_form{ text-align: center;border: 1px dashed;border-top: none;margin-top: -17px;}
+.form select{width: 70%;border: 1px solid;border-radius: 100px;background-color: #fffbfb;margin-left: 15%;}
+.form select option{border-radius: 100px;}
+.from-box input[type=button]{width: 80%;background-color: #009E3F;font-weight: bold;text-align: center;border: none;color: white;}
+.advertisement{background: #dadadaa9;text-align: center;}
+
+/*--------------------------------------------------------------
+#                               photo_gallery
+--------------------------------------------------------------*/
+#photo .photo{background: rgba(160, 160, 160, 0.411); text-align: center;}
+#photo .sub_photo{background: rgba(173, 173, 173, 0.445); text-align: center;}
+.camera_icon{top: 5%;left: 80%;}
+#photo .photo .camera_icon i{font-size: 70px;color: white;}
+.sub_photo .camera_icon i{font-size: 40px;color:white;}
+.photo a:hover i.fa-camera {color: #000 !important;}
+.sub_photo a:hover i.fa-camera {color: #000 !important;}
+
+/*--------------------------------------------------------------
+#                              video
+--------------------------------------------------------------*/
+#video .news-category{background: #7151f3; clip-path: polygon(0 0, 13% 0, 15% 100%, 0 100%);}
+#video .video{background: rgba(173, 173, 173, 0.445); text-align: center;height: 345px;}
+#video .sub_video{background: rgba(173, 173, 173, 0.445); text-align: center; }
+#video .video .video_icon{top: 42%;left: 43%;}
+.sub_video .video_icon{top: 40%;left: 40%;}
+.video .video_icon i{font-size: 35px;color: #fff;background: rgba(0,0,0,.5);padding:10px 15px 10px 17px ;
+opacity: 3;}
+.video a:hover i.fa-sm { text-decoration: none;color: rgba(255, 0, 0, 0.795)!important;}
+.sub_video a:hover i.fa-sm { text-decoration: none;color: rgba(255, 0, 0, 0.795)!important;}
+.sub_video .video_icon i {font-size: 25px;color: #fff;background: rgba(0,0,0,.5);padding: 7px 11px 7px 13px;opacity: 3;}
+
+
+/*--------------------------------------------------------------
+#                              foter
+--------------------------------------------------------------*/
+.footer{background: #e6e6e6 }
+.footer_menu li a{float: left; font-size: 17px;line-height: 1;color: #000; margin-left: 30px;}
+.orange{font-size: 22px; color: #f6f6f6;color: #ED7C31;}
+.orangebd{font-size: 22px;color: #000;}
+.design_develop p{font-size: 10px;text-align: right;}
+
+
+
+
+
+
